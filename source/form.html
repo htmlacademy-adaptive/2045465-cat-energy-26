@@ -8,8 +8,8 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo-mobile">
-      <img class="logo-mobile__logo-icon" src="" width="33" height="38" alt="Иконка кэт энерджи.">
+    <a class="main-header__logo">
+      <img class="main-header__logo-icon" src="" width="33" height="38" alt="Иконка кэт энерджи.">
     </a>
     <a class="main-header__logo logo">
       <img class="logo__logo-image" src="" width="101" height="18" alt="Кэт энерджи.">
@@ -21,7 +21,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -31,7 +31,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a>
               Подбор программы
             </a>
           </li>
@@ -42,7 +42,7 @@
   <main class="main-inner-form">
     <h1 class="main-inner-form__title">Подбор программы</h1>
     <span class="main-inner-form__text">Заполните анкету, и мы подберем программу питания для вашего кота</span>
-    <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="form__group">
         <legend class="visually-hidden">Данные вашего питомца.</legend>
         <label class="form__feedback">
@@ -63,19 +63,19 @@
         <ul class="form__group-list control">
           <li class="control__item">
             <label class="control__field">
-              <input class="control__input " type="radio" name="program" value="slim" checked>
+              <input class="control__input" type="radio" name="program" value="slim" checked>
               <span class="control__mark">Похудение</span>
             </label>
           </li>
           <li class="control__item">
             <label class="control__field">
-              <input class="control__input " type="radio" name="program" value="weight">
+              <input class="control__input" type="radio" name="program" value="weight">
               <span class="control__mark">Набор массы</span>
             </label>
           </li>
           <li class="control__item">
             <label class="control__field">
-              <input class="control__input " type="radio" name="program" value="advice">
+              <input class="control__input" type="radio" name="program" value="advice">
               <span class="control__mark">Не знаю (Нужен ваш совет)</span>
             </label>
           </li>
@@ -90,7 +90,7 @@
         </label>
         <label class="form__feedback">
           <span class="form__feedback-label">Телефон:<sup>*</sup></span>
-          <input class="form__feedback-field input input--phone" type="tel"
+          <input class="form__feedback-field input input--number" type="tel"
             pattern="\8\s[\(]{0,1}9[0-9]{2}[\)]{0,1}\s[0-9]{3}[-]{0,1}[0-9]{2}[-]{0,1}[0-9]{2}"
             name="feedback-field-phone" placeholder="8 (960) 900-60-90">
         </label>
@@ -102,29 +102,29 @@
       </fieldset>
       <fieldset class="form__group">
         <legend class="form__group-title">Дополнительно</legend>
-        <ul class="form__group-list control">
-          <li class="control__item">
-            <label class="control__field">
-              <input class="control__input " type="checkbox" name="sweetener" checked>
-              <span class="control__mark">сахарозаменитель</span>
+        <ul class="form__group-list ccheck">
+          <li class="check__item">
+            <label class="check__field">
+              <input class="check__input" type="checkbox" name="sweetener" checked>
+              <span class="check__mark">сахарозаменитель</span>
             </label>
           </li>
-          <li class="control__item">
-            <label class="control__field">
-              <input class="control__input " type="checkbox" name="water">
-              <span class="control__mark">питьевая вода</span>
+          <li class="check__item">
+            <label class="check__field">
+              <input class="check__input" type="checkbox" name="water">
+              <span class="check__mark">питьевая вода</span>
             </label>
           </li>
-          <li class="control__item">
-            <label class="control__field">
-              <input class="control__input " type="checkbox" name="milk">
-              <span class="control__mark">молоко</span>
+          <li class="check__item">
+            <label class="check__field">
+              <input class="check__input" type="checkbox" name="milk">
+              <span class="check__mark">молоко</span>
             </label>
           </li>
-          <li class="control__item">
-            <label class="control__field">
-              <input class="control__input " type="checkbox" name="vitamins">
-              <span class="control__mark">витамины</span>
+          <li class="check__item">
+            <label class="check__field">
+              <input class="ccheck__input" type="checkbox" name="vitamins">
+              <span class="check__mark">витамины</span>
             </label>
           </li>
         </ul>
@@ -141,7 +141,7 @@
         <p class="contacts__text">ул. Большая
           Конюшенная, д. 19/8
           Санкт-Петербург</p>
-        <img class="contacts__map" width="320" height="362" src="" alt="Карта месторасположения магазина.">
+        <!-- <img class="contacts__map" width="320" height="362" src="" alt="Карта месторасположения магазина."> -->
         <img class="contacts__map-logo contacts__map-logo--footer" width="57" height="53" src=""
           alt="Иконка кэт энерджи.">
       </section>

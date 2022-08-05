@@ -1,0 +1,11 @@
+.check__item {
+  margin: 13px 0;
+}
+
+.check__item:last-child {
+  margin-bottom: 34px;
+}
+
+.check__mark {
+  @include text;
+}

@@ -1,0 +1,14 @@
+.main-inner-form__wrapper {
+  margin: 0 20px;
+}
+
+.main-inner-form__title {
+  @include heading;
+  line-height: 36px;
+  margin: 27px 0 37px;
+}
+
+.main-inner-form__text {
+  text-transform: uppercase;
+  text-align: left;
+}

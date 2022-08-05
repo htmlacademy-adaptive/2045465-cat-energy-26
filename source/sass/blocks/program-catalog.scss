@@ -1,0 +1,15 @@
+.program__catalog {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.catalog__title {
+  @include catalog-title;
+  margin-top: 10px;
+  margin-bottom: 29px;
+}
+
+.catalog__intro {
+  font-family: "Arial", sans-serif;
+}

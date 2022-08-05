@@ -1,0 +1,38 @@
+.main-footer {
+  box-sizing: border-box;
+}
+
+.contacts__wrapper {
+  margin: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  line-height: 20px;
+  .contacts__message {
+    width: 139px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .contacts__text {
+    width: 139px;
+  }
+}
+
+.contacts__map {
+  background-image: ;
+}
+
+  .main-footer__footer {
+    background-color: #F2F2F2;
+    margin: 0 20px;
+    display: flex;
+}
+
+.social {
+  display: flex;
+}
+
+.copyright {
+  display: flex;
+}

@@ -1,0 +1,16 @@
+.program {
+  width: 320px;
+
+}
+
+
+.program__title {
+  @include heading;
+  color: #FFFFFF;
+  line-height: 36px;
+}
+
+.program__slogan {
+  text-transform: uppercase;
+  color: #FFFFFF;
+}

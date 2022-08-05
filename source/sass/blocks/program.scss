@@ -1,12 +1,8 @@
-.program {
-  // width: 320px;
-}
-
 .program__header {
-  background-color: #68b738d9;
-  background-image: url("//source/img/background-cat-green.png");
-  margin: 0 20px 20px;
-  padding: 27px 36px 0;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/background-cat-green.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 320px;
   height: 302px;
   margin-bottom: 178px;
 }
@@ -16,6 +12,8 @@
   color: #ffffff;
   line-height: 36px;
   text-align: center;
+  margin: 0;
+  padding: 27px 35px 25px;
 }
 
 .program__slogan {
@@ -23,5 +21,11 @@
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  margin: 25px 0 29px;
+  margin: 0;
+  padding-bottom: 29px;
+}
+
+.program__image {
+  display: block;
+  margin-left: 20px;
 }

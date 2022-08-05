@@ -1,6 +1,16 @@
 .cover {
   @include cover-text;
-  padding: 187px 81px 43px 78px;
-  background-color: #68b738d9;
-  background-image: url("//source/img/catalog/background-catalog.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/catalog/background-catalog.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 280px;
+  height: 290px;
+  margin-left: 20px;
+}
+
+.cover__message {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 186px 61px 43px 58px;
 }

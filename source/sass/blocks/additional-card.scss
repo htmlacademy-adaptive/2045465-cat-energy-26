@@ -1,0 +1,14 @@
+.additional-card__title {
+  @include form-title;
+  line-height: 24px;
+}
+
+.additional-card__item {
+  @include card-text;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional-card__name {
+  @include text;
+}

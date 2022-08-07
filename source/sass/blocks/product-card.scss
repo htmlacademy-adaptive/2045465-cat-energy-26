@@ -1,0 +1,13 @@
+.product-card__item {
+  margin-bottom: 20px;
+}
+
+.product-card__name {
+  @include text;
+  line-height: 20px;
+  color: #222222;
+}
+
+.product-card__name-last {
+  margin-top: 103px;
+}

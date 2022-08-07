@@ -1,0 +1,11 @@
+.control__item {
+  margin: 13px 0;
+}
+
+.control__item:last-child {
+  margin-bottom: 45px;
+}
+
+.control__mark {
+  @include text;
+}

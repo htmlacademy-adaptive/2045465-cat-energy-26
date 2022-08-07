@@ -1,0 +1,31 @@
+.program__header {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/background-cat-green.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 320px;
+  height: 302px;
+  margin-bottom: 178px;
+}
+
+.program__title {
+  @include heading;
+  color: #ffffff;
+  line-height: 36px;
+  text-align: center;
+  margin: 0;
+  padding: 27px 35px 25px;
+}
+
+.program__slogan {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 29px;
+}
+
+.program__image {
+  display: block;
+  margin-left: 20px;
+}

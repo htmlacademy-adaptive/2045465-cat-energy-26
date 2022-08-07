@@ -1,0 +1,14 @@
+.example__title {
+  @include heading;
+  margin: 25px 0 40px;
+}
+
+.example__wrapper {
+  margin: 0 20px;
+  background-color: #eaeaea;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
+}

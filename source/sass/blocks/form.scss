@@ -1,0 +1,24 @@
+.form__group {
+  margin: 0 20px;
+}
+
+.form__group-title {
+  @include form-title;
+}
+
+.form__feedback {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__feedback-label {
+  @include text;
+}
+
+.form__feedback-field {
+  @include text;
+}
+
+.form__legend {
+  margin-top: 21px;
+}

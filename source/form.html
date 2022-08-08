@@ -51,15 +51,15 @@
         <legend class="visually-hidden">Данные вашего питомца.</legend>
         <label class="form__feedback">
           <span class="form__feedback-label">ИМЯ:<sup>*</sup></span>
-          <input class="form__feedback-field input" type="text" name="feedback-field-name" placeholder="Барсик">
+          <input class="form__feedback-field" type="text" name="feedback-field-name" placeholder="Барсик">
         </label>
         <label class="form__feedback">
           <span class="form__feedback-label">Вес (кг):<sup>*</sup></span>
-          <input class="form__feedback-field input" type="text" name="feedback-field-name" placeholder="7">
+          <input class="form__feedback-field" type="text" name="feedback-field-name" placeholder="7">
         </label>
         <label class="form__feedback">
           <span class="form__feedback-label">Возраст (лет):</span>
-          <input class="form__feedback-field input" type="text" name="feedback-field-name" placeholder="7">
+          <input class="form__feedback-field" type="text" name="feedback-field-name" placeholder="7">
         </label>
       </fieldset>
       <fieldset class="form__group">
@@ -89,12 +89,12 @@
         <legend class="form__group-title">Контактные данные (владельца кота)</legend>
         <label class="form__feedback">
           <span class="form__feedback-label">E-mail:<sup>*</sup></span>
-          <input class="form__feedback-field input input--email" type="email" name="feedback-field-email"
+          <input class="form__feedback-field input--email" type="email" name="feedback-field-email"
             placeholder="kuklachev@gmail.com">
         </label>
         <label class="form__feedback">
           <span class="form__feedback-label">Телефон:<sup>*</sup></span>
-          <input class="form__feedback-field input input--number" type="tel"
+          <input class="form__feedback-field input--number" type="tel"
             pattern="\8\s[\(]{0,1}9[0-9]{2}[\)]{0,1}\s[0-9]{3}[-]{0,1}[0-9]{2}[-]{0,1}[0-9]{2}"
             name="feedback-field-phone" placeholder="8 (960) 900-60-90">
         </label>
@@ -127,18 +127,18 @@
           </li>
           <li class="check__item">
             <label class="check__field">
-              <input class="ccheck__input" type="checkbox" name="vitamins">
+              <input class="check__input" type="checkbox" name="vitamins">
               <span class="check__mark">витамины</span>
             </label>
           </li>
         </ul>
       </fieldset>
-      <button class="form__button button" type="submit">Отправить заявку</button>
+      <button class="form__button" type="submit">Отправить заявку</button>
       <p class="form__legend"><sup>*</sup> — Обязательные поля</p>
     </form>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper main-footer__wrapper--difference">
+    <div class="main-footer__wrapper main-footer__wrapper--background">
       <section class="main-footer__contacts contacts">
         <div class="contacts__wrapper">
           <h3 class="visually-hidden">Адрес магазина.</h3>
@@ -148,7 +148,7 @@
             Санкт-Петербург</p>
         </div>
         <!-- <img class="contacts__map" width="320" height="362" src="" alt="Карта месторасположения магазина."> -->
-        <img class="contacts__map-logo contacts__map-logo--footer" width="57" height="53" src="./img/map-logo.svg"
+        <img class="contacts__map-logo" width="57" height="53" src="./img/map-logo.svg"
           alt="Иконка кэт энерджи.">
       </section>
       <section class="main-footer__footer">

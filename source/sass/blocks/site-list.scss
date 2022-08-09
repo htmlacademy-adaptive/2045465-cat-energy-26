@@ -1,0 +1,20 @@
+.site-list {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    margin-left: auto;
+    width: 440px;
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 478px;
+  }
+}

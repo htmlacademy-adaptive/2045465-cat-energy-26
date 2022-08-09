@@ -1,16 +1,32 @@
 .program__header {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/background-cat-green.png");
+  background-image: linear-gradient(#68b738d9, #68b738d9), url("../../img/background-cat-green.png");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 320px;
   height: 302px;
   margin-bottom: 178px;
-}
+  background-color: #68b738d9;
 
-.program__catalog {
-  margin: 20px;
-  padding: 20px;
-  background-color: #f2f2f2;
+  @media (min-width: $tablet-width) {
+    background: none;
+    padding-left: 117px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 582px;
+
+    & ::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 720px;
+      height: 694px;
+      background-image: linear-gradient(#68b738d9, #68b738d9), url("../../img/background-desktop.png");
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
 }
 
 .program__title {
@@ -20,6 +36,14 @@
   text-align: center;
   margin: 0;
   padding: 27px 35px 25px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    color: #000000;
+    margin: 62px 0 41px 0;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .program__slogan {
@@ -29,9 +53,33 @@
   text-align: center;
   margin: 0;
   padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .program__image {
   display: block;
   margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.program__catalog {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.program__inner {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }

@@ -1,10 +1,48 @@
 .main-header {
   display: flex;
-  // justify-content: space-between;
-  // width: 320px;
+  justify-content: space-between;
   font-size: 20px;
   line-height: 20px;
   font-weight: bold;
   text-transform: uppercase;
   margin: 10px 20px 17px;
+  color: #000000;
+}
+
+.main-header__logo {
+  min-height: 66px;
+}
+
+.main-nav__list {
+  @include list-none;
+}
+
+.main-nav__list a {
+  color: #000000;
+}
+
+.main-nav__list--color a {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
 }

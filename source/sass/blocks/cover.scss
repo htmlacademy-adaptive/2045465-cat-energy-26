@@ -6,6 +6,10 @@
   width: 280px;
   height: 290px;
   margin-left: 20px;
+
+  @media (min-width: $tablet-width) and (max-width: 1200px) {
+    display: flex;
+  }
 }
 
 .cover__message {

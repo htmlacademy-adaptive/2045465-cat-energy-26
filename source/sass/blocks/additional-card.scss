@@ -1,14 +1,65 @@
+.additional-card {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+}
+
 .additional-card__title {
   @include form-title;
   line-height: 24px;
+  margin: 50px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 68px 0 106px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 75px 0 106px;
+  }
+}
+
+.additional-card__list {
+  @include list-none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .additional-card__item {
   @include card-text;
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, auto);
+  }
 }
 
 .additional-card__name {
   @include text;
+  margin: 0;
+}
+
+.additional-card__button {
+  grid-column: 1/3;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4/5;
+  }
+}
+
+.additional-card__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

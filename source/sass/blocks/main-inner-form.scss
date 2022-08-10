@@ -1,14 +1,44 @@
+.main-inner-form {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 .main-inner-form__wrapper {
-  margin: 0 20px;
+  padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 66px;
+  }
 }
 
 .main-inner-form__title {
   @include heading;
   line-height: 36px;
   margin: 27px 0 37px;
+
+  @media (min-width: $tablet-width) {
+    @include heading-tablet;
+    margin: 64px 0 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 77px 0 56px;
+  }
 }
 
 .main-inner-form__text {
   text-transform: uppercase;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-text;
+    line-height: 30px;
+  }
 }

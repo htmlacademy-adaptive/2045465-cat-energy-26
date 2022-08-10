@@ -12,6 +12,8 @@
   margin: 50px 0;
 
   @media (min-width: $tablet-width) {
+    @include heading;
+    line-height: 36px;
     margin: 68px 0 106px;
   }
 
@@ -35,6 +37,9 @@
   line-height: 14px;
 
   @media (min-width: $tablet-width) {
+    @include tablet-text;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
     display: grid;
     grid-template-columns: repeat(3, auto);
   }
@@ -47,6 +52,10 @@
 .additional-card__name {
   @include text;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-text;
+  }
 }
 
 .additional-card__button {

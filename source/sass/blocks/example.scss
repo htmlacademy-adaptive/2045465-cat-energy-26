@@ -13,6 +13,7 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
+    @include heading-tablet;
     margin-bottom: 63px;
   }
 
@@ -39,6 +40,12 @@
 .example__text {
   font-family: "Arial", sans-serif;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    @include cover-text;
+    line-height: 24px;
+    color: #000000;
+  }
 }
 
 .example__list {

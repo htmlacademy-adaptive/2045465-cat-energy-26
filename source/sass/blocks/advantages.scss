@@ -1,5 +1,9 @@
 .advantages__title {
   @include heading;
+
+  @media (min-width: $tablet-width) {
+    @include heading-tablet;
+  }
 }
 
 .advantages__wrapper {
@@ -27,4 +31,10 @@
   font-family: "Arial", sans-serif;
   margin: 0;
   max-width: 250px;
+
+  @media (min-width: $tablet-width) {
+    @include cover-text;
+    line-height: 24px;
+    color: #000000;
+  }
 }

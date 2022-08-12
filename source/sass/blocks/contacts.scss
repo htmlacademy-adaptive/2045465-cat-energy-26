@@ -1,0 +1,30 @@
+.contacts__wrapper {
+  margin: 35px 20px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 20px;
+}
+
+.contacts__message {
+  display: block;
+  width: 139px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    @include form-title;
+    font-size: 20px;
+  }
+}
+
+.contacts__text {
+  width: 139px;
+  margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    @include cover-text;
+    color: #000000;
+  }
+}

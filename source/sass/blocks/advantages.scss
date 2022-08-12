@@ -1,11 +1,40 @@
 .advantages__title {
   @include heading;
+
+  @media (min-width: $tablet-width) {
+    @include heading-tablet;
+  }
 }
 
 .advantages__wrapper {
-  margin: 20px 20px 49px;
+  margin: 20px 20px 0;
+}
+
+.advantages__list {
+  @include list-none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages__item {
+  margin-bottom: 26px;
+}
+
+.advantages__item:last-child {
+  margin-bottom: 53px;
 }
 
 .advantages__description {
   font-family: "Arial", sans-serif;
+  margin: 0;
+  max-width: 250px;
+
+  @media (min-width: $tablet-width) {
+    @include cover-text;
+    line-height: 24px;
+    color: #000000;
+  }
 }

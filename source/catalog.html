@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -195,39 +196,41 @@
     </section>
     <section class="additional-card">
       <h2 class="additional-card__title">Дополнительные товары</h2>
-      <ul class="additional-card__list">
-        <li class="additional-card__item">
-          <h3 class="additional-card__name">Сахарозаменитель</h3>
-          <span class="additional-card__quantity">1 упаковка (100 г)</span>
-          <span class="additional-card__price">200 Р.</span>
-          <a class="additional-card__button button" href="#">Заказать</a>
-        </li>
-        <li class="additional-card__item">
-          <h3 class="additional-card__name">Питьевая вода</h3>
-          <span class="additional-card__quantity">5 литров</span>
-          <span class="additional-card__price">50 Р.</span>
-          <a class="additional-card__button button" href="#">Заказать</a>
-        </li>
-        <li class="additional-card__item">
-          <h3 class="additional-card__name">Молоко</h3>
-          <span class="additional-card__quantity">1 литр</span>
-          <span class="additional-card__price">100 Р.</span>
-          <a class="additional-card__button button" href="#">Заказать</a>
-        </li>
-        <li class="additional-card__item">
-          <h3 class="additional-card__name">Витамины</h3>
-          <span class="additional-card__quantity">1 упаковка (30 г)</span>
-          <span class="additional-card__price">300 Р.</span>
-          <a class="additional-card__button button" href="#">Заказать</a>
-        </li>
-      </ul>
+      <div class="additional-card__wrapper">
+        <ul class="additional-card__list">
+          <li class="additional-card__item">
+            <h3 class="additional-card__name">Сахарозаменитель</h3>
+            <span class="additional-card__quantity">1 упаковка (100 г)</span>
+            <span class="additional-card__price">200 Р.</span>
+            <a class="additional-card__button button" href="#">Заказать</a>
+          </li>
+          <li class="additional-card__item">
+            <h3 class="additional-card__name">Питьевая вода</h3>
+            <span class="additional-card__quantity">5 литров</span>
+            <span class="additional-card__price">50 Р.</span>
+            <a class="additional-card__button button" href="#">Заказать</a>
+          </li>
+          <li class="additional-card__item">
+            <h3 class="additional-card__name">Молоко</h3>
+            <span class="additional-card__quantity">1 литр</span>
+            <span class="additional-card__price">100 Р.</span>
+            <a class="additional-card__button button" href="#">Заказать</a>
+          </li>
+          <li class="additional-card__item">
+            <h3 class="additional-card__name">Витамины</h3>
+            <span class="additional-card__quantity">1 упаковка (30 г)</span>
+            <span class="additional-card__price">300 Р.</span>
+            <a class="additional-card__button button" href="#">Заказать</a>
+          </li>
+        </ul>
+        <div class="cover">
+          <span class="cover__message">Закажите всe и получите чехол для кота в подарок!</span>
+        </div>
+      </div>
     </section>
-    <div class="cover">
-      <span class="cover__message">Закажите всe и получите чехол для кота в подарок!</span>
-    </div>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper main-footer__wrapper--difference">
+    <div class="main-footer__wrapper main-footer__wrapper--background">
       <section class="main-footer__contacts contacts">
         <div class="contacts__wrapper">
           <h3 class="visually-hidden">Адрес магазина.</h3>
@@ -237,8 +240,7 @@
             Санкт-Петербург</p>
         </div>
         <!-- <img class="contacts__map" width="320" height="362" src="" alt="Карта месторасположения магазина."> -->
-        <img class="contacts__map-logo contacts__map-logo--footer" width="57" height="53" src="./img/map-logo.svg"
-          alt="Иконка кэт энерджи.">
+        <img class="contacts__map-logo" width="57" height="53" src="./img/map-logo.svg" alt="Иконка кэт энерджи.">
       </section>
       <section class="main-footer__footer">
         <div class="main-footer__logo logo">

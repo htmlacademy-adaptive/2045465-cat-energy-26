@@ -2,4 +2,13 @@
   @include heading;
   line-height: 36px;
   margin: 27px 20px 60px;
+
+  @media (min-width: $tablet-width) {
+    @include heading-tablet;
+    margin-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+  }
 }

@@ -1,3 +1,7 @@
 .card-list__item {
   @include card-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }

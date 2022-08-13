@@ -3,6 +3,14 @@
   line-height: 24px;
   font-weight: 400;
   font-family: "Oswald", sans-serif;
+
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    width: 100%;
+    top: 66px;
+    left: 0;
+    background-color: #ffffff;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -17,4 +25,15 @@
   .site-list {
     width: 478px;
   }
+}
+
+.site-list a {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 22px 0;
+  padding-bottom: 24px;
+  text-decoration: none;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }

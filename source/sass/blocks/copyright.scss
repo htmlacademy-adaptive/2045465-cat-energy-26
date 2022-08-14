@@ -1,3 +1,25 @@
 .copyright {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+
+.copyright__text {
+  @include cover-text;
+  color: #444444;
+  line-height: 18px;
+}
+
+.copyright-network {
+  fill: #666666;
+}
+
+.copyright-network:hover {
+  fill: $basic-background;
+}
+
+.copyright-network:active {
+  fill: $basic-background;
+  opacity: 0.3;
 }

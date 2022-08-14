@@ -1,8 +1,10 @@
 .contacts__wrapper {
-  margin: 35px 20px;
+  padding: 26px 20px;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   line-height: 20px;
+  background-color: #ffffff;
 }
 
 .contacts__message {
@@ -11,7 +13,6 @@
   font-size: 16px;
   text-transform: uppercase;
   text-align: left;
-  margin-top: 26px;
 
   @media (min-width: $tablet-width) {
     @include form-title;
@@ -19,12 +20,20 @@
   }
 }
 
-.contacts__text {
+.contacts__text-wrapper {
+  font-family: "Arial", sans-serif;
   width: 139px;
-  margin-top: 26px;
+  color: #444444;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     @include cover-text;
     color: #000000;
   }
+}
+
+.contacts__text,
+.contacts__text-town {
+  margin: 0;
+  padding: 0;
 }

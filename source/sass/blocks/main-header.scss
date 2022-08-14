@@ -5,8 +5,17 @@
   line-height: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 0 20px 0;
+  margin: 0 20px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
 }
 
 .main-header__logo {
@@ -15,10 +24,12 @@
 
   @media (min-width: $tablet-width) {
     height: 76px;
+    padding-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
     height: 110px;
+    padding-top: 53px;
   }
 }
 
@@ -29,8 +40,10 @@
 }
 
 .main-nav {
-  width: auto;
-  min-height: 66px;
+  @media (max-width: $mobile-width) {
+    width: auto;
+    min-height: 66px;
+  }
 }
 
 .main-nav__toggle {
@@ -125,7 +138,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 708px;
   }
 
   @media (min-width: $desktop-width) {

@@ -40,6 +40,7 @@
 .example__text {
   font-family: "Arial", sans-serif;
   margin-bottom: 20px;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
     @include cover-text;

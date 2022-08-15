@@ -33,7 +33,6 @@
   padding-bottom: 24px;
   text-decoration: none;
   border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -42,6 +41,14 @@
 
   @media (min-width: $desktop-width) {
     padding: 69px 0 8px;
+  }
+}
+
+.site-list a:last-child {
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
   }
 }
 

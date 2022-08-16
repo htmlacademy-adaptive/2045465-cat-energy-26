@@ -128,12 +128,11 @@
   color: #000000;
 }
 
-.main-nav__list--color a {
+.main-nav__list--index a {
   @media (min-width: $desktop-width) {
     color: #ffffff;
   }
 }
-
 
 .main-nav__wrapper {
   @media (min-width: $tablet-width) {

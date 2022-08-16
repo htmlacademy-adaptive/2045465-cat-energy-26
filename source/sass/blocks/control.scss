@@ -25,6 +25,11 @@
     padding: 25px 0 2px 27px;
     margin-top: 72px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 33px 0 2px 28px;
+  }
 }
 
 .control__field {
@@ -41,6 +46,10 @@
   height: 30px;
   border-radius: 50%;
   border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
 }
 
 .control__input[type="radio"]:checked + .control__tick::before {
@@ -65,4 +74,11 @@
 
 .control__mark {
   @include text;
+  color: #222222;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-text;
+    color: #222222;
+    line-height: 30px;
+  }
 }

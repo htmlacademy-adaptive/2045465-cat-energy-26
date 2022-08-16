@@ -1,6 +1,6 @@
 .catalog {
   padding: 30px 33px 18px 20px;
-  background: url("../../img/arrow.svg") 48% 89% no-repeat #f2f2f2;
+  background: url("../img/arrow.svg") 48% 89% no-repeat #f2f2f2;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -38,11 +38,11 @@
     height: 50px;
     top: 18px;
     left: 29px;
-    background: url("../../img/cat-icon-sit.svg") no-repeat;
+    background: url("../img/cat-icon-sit.svg") no-repeat;
     z-index: 2;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 30px;
 
     &::after {
@@ -98,11 +98,11 @@
     height: 50px;
     top: 35px;
     left: 13px;
-    background: url("../../img/cat-icon.svg") no-repeat;
+    background: url("../img/cat-icon.svg") no-repeat;
     z-index: 2;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 45px;
 
     &::after {

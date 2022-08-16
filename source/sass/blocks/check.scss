@@ -25,6 +25,10 @@
   width: 26px;
   height: 26px;
   border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    top: 2px;
+  }
 }
 
 .check__input[type="checkbox"]:checked + .check__tick::before {
@@ -34,7 +38,7 @@
   height: 14px;
   top: 5px;
   left: 4px;
-  background: url("../../img/check.svg") no-repeat;
+  background: url("../img/check.svg") no-repeat;
 }
 
 .check__item {

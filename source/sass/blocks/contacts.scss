@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   line-height: 20px;
-  background-color: #ffffff;
+  background-color: $color-background;
 
   @media (min-width: $tablet-width) {
     padding: 56px 70px;
@@ -21,7 +21,12 @@
     left: 110px;
     z-index: 1;
     width: 565px;
+    background-color: #ffffff;
   }
+}
+
+.contacts__wrapper--index {
+  background-color: #ffffff;
 }
 
 .contacts__message {

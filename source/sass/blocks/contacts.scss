@@ -48,8 +48,9 @@
 }
 
 .contacts__text {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
-    margin: 0;
     margin-bottom: 20px;
   }
 }

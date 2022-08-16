@@ -5,10 +5,11 @@
   background-size: 100%;
   width: 280px;
   height: 290px;
-  margin-left: 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) and (max-width: 1200px) {
-    display: flex;
+    margin-top: 69px;
+    width: 100%;
   }
 }
 
@@ -17,4 +18,11 @@
   text-align: center;
   margin: 0;
   padding: 186px 61px 43px 58px;
+  background: url("../../img/icon-gift.svg") 50% 25% no-repeat;
+
+  @media (min-width: $tablet-width)  and (max-width: 1200px) {
+    padding: 120px 124px 69px 422px;
+    text-align: left;
+    background-position: 10% 65%;
+  }
 }

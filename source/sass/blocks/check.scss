@@ -12,6 +12,31 @@
   }
 }
 
+.check__field {
+  position: relative;
+  display: block;
+  padding-left: 44px;
+}
+
+.check__tick {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #cdcdcd;
+}
+
+.check__input[type="checkbox"]:checked + .check__tick::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 14px;
+  top: 5px;
+  left: 4px;
+  background: url("../../img/check.svg") no-repeat;
+}
+
 .check__item {
   margin: 13px 0;
 }

@@ -5,6 +5,7 @@
 .form__group-title {
   @include form-title;
   padding: 26px 0 35px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -36,12 +37,36 @@
 .form__feedback-field {
   @include text;
   padding: 13px 15px;
+  border: 1px solid #e7e7e7;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     @include tablet-text;
     line-height: 30px;
     padding: 10px 18px;
   }
+}
+
+.form__feedback--email {
+  position: relative;
+}
+
+.form__feedback-field-email {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.form__feedback--phone {
+  position: relative;
+}
+
+.form__feedback-field-phone {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
 }
 
 .form__wrapper-desktop {
@@ -55,8 +80,10 @@
   @include fieldset;
   min-width: 280px;
   min-height: 151px;
-  border: 1px solid #e7e7e7;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
   padding: 10px 15px;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
     min-width: 631px;
@@ -69,7 +96,12 @@
 }
 
 .form__legend {
+  @include card-text;
+  font-size: 14px;
+  color: #000000;
   margin: 0;
+  padding: 21px 0 32px;
+  text-align: center;
 
   @media (width: $mobile-width) {
     font-size: 16px;
@@ -78,7 +110,16 @@
 }
 
 .form__button {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 7px 44px;
+  border: none;
+  text-align: center;
+  background-color: $basic-background;
   margin-top: 41px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -98,7 +139,7 @@
 
 .form__group-title-check {
   @include form-title;
-  padding: 23px 0 39px;
+  padding: 23px 0 34px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;

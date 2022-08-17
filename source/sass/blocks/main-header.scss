@@ -88,7 +88,7 @@
 
 .main-nav--nojs .main-nav__wrapper {
   position: static;
-  min-height: 0;
+  min-height: 264px;
 }
 
 .main-nav--nojs .site-list__item {
@@ -103,7 +103,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
+    top: 30px;
     right: 20px;
     width: 24px;
     height: 2px;

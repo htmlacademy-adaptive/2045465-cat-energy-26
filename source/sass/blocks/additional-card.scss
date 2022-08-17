@@ -17,6 +17,18 @@
   line-height: 24px;
   margin: 25px 0 0;
   padding-bottom: 36px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 2px;
+    background-color: $basic-background;
+    top: 15px;
+    right: -20px;
+  }
 
   @media (min-width: $tablet-width) {
     @include heading;
@@ -24,10 +36,36 @@
     margin: 68px 0 0;
     padding-left: 38px;
     padding-bottom: 80px;
+
+    &::before {
+      width: 30px;
+      top: 20px;
+      right: auto;
+      left: -30px;
+    }
+
+    &::after {
+      width: 328px;
+      top: 20px;
+      right: -30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin: 76px 0 0;
+
+    &::before {
+      width: 70px;
+      top: 20px;
+      right: auto;
+      left: -110px;
+    }
+
+    &::after {
+      width: 927px;
+      top: 20px;
+      right: -110px;
+    }
   }
 }
 

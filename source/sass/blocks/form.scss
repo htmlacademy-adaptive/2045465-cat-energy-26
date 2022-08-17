@@ -1,5 +1,6 @@
 .form__group {
   @include fieldset;
+  position: relative;
 }
 
 .form__group-title {
@@ -7,14 +8,99 @@
   padding: 26px 0 35px;
   margin: 0;
 
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 99px;
+    background-color: $basic-background;
+    top: 40px;
+    right: -20px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     padding: 75px 0;
+
+    &::after {
+      width: 145px;
+      top: 100px;
+      right: -69px;
+    }
+
+    &::before {
+      width: 30px;
+      top: 100px;
+      right: auto;
+      left: -69px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 49px 0 76px;
+
+    &::after {
+      width: 778px;
+      top: 70px;
+      right: -110px;
+    }
+
+    &::before {
+      width: 70px;
+      top: 70px;
+      right: auto;
+      left: -110px;
+    }
+  }
+}
+
+.form__group-title--comment {
+  &::after {
+    width: 158px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 478px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 1108px;
+    }
+  }
+}
+
+
+.form__group-title--check {
+  padding: 23px 0 34px;
+
+  &::after {
+    width: 136px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 62px;
+
+    &::after {
+      width: 446px;
+      top: 90px;
+    }
+
+    &::before {
+      top: 90px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 67px;
+
+    &::after {
+      width: 1078px;
+    }
   }
 }
 
@@ -160,20 +246,5 @@
     padding: 14px 188px;
     min-width: 568px;
     margin: 0 81px 0 0;
-  }
-}
-
-.form__group-title-check {
-  @include form-title;
-  padding: 23px 0 34px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-    padding: 65px 0 62px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 67px;
   }
 }

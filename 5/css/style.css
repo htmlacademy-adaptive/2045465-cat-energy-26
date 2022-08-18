@@ -148,13 +148,19 @@ body {
     display: none;
   }
 }
+
 .main-nav--nojs .main-nav__toggle {
   display: none;
 }
 
 .main-nav--nojs .main-nav__wrapper {
   position: static;
-  min-height: 264px;
+  min-height: 0;
+}
+@media (max-width: 767px) {
+  .main-nav--nojs .main-nav__wrapper {
+    min-height: 264px;
+  }
 }
 
 .main-nav--nojs .site-list__item {

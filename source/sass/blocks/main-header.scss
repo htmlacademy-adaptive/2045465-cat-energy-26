@@ -76,8 +76,8 @@
   box-shadow: 0 7px 0 0 #000000, 0 14px 0 0 #000000;
 }
 
-@media (max-width: $mobile-width) {
-  .main-nav--closed .site-list__item {
+.main-nav--closed .site-list__item {
+  @media (max-width: $mobile-width) {
     display: none;
   }
 }
@@ -88,7 +88,11 @@
 
 .main-nav--nojs .main-nav__wrapper {
   position: static;
-  min-height: 264px;
+  min-height: 0;
+
+  @media (max-width: $mobile-width) {
+    min-height: 264px;
+  }
 }
 
 .main-nav--nojs .site-list__item {

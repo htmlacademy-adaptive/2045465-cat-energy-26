@@ -1,14 +1,15 @@
 .cover {
   @include cover-text;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/catalog/background-catalog.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/background-catalog.png");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 280px;
   height: 290px;
-  margin-left: 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) and (max-width: 1200px) {
-    display: flex;
+    margin-top: 69px;
+    width: 100%;
   }
 }
 
@@ -17,4 +18,11 @@
   text-align: center;
   margin: 0;
   padding: 186px 61px 43px 58px;
+  background: url("../img/icon-gift.svg") 50% 25% no-repeat;
+
+  @media (min-width: $tablet-width)  and (max-width: 1200px) {
+    padding: 120px 124px 69px 422px;
+    text-align: left;
+    background-position: 10% 65%;
+  }
 }

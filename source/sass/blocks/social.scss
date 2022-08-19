@@ -1,3 +1,35 @@
 .social {
   display: flex;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.social__list {
+  @include list-none;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  min-width: 132px;
+  padding: 20px 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.social-network {
+  fill: #666666;
+}
+
+.social-network:hover {
+  fill: $basic-background;
+}
+
+.social-network:active {
+  fill: $basic-background;
+  opacity: 0.3;
 }

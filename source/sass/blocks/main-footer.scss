@@ -1,9 +1,5 @@
 .main-footer {
-  box-sizing: border-box;
-}
-
-.main-footer__wrapper--background {
-  background-color: #f2f2f2;
+  background-color: $color-background;
 }
 
 .main-footer__footer {
@@ -15,5 +11,24 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+    padding: 58px 0 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+    padding: 57px 0 58px;
+  }
+}
+
+.main-footer__logo {
+  padding: 39px 0 32px;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
   }
 }

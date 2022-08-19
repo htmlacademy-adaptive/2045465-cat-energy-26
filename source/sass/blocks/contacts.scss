@@ -1,17 +1,39 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__wrapper {
-  margin: 35px 20px;
+  padding: 26px 20px;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   line-height: 20px;
+  background-color: $color-background;
+
+  @media (min-width: $tablet-width) {
+    padding: 56px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 80px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 1;
+    width: 565px;
+    background-color: #ffffff;
+  }
+}
+
+.contacts__wrapper--index {
+  background-color: #ffffff;
 }
 
 .contacts__message {
   display: block;
-  width: 139px;
   font-size: 16px;
   text-transform: uppercase;
   text-align: left;
-  margin-top: 26px;
 
   @media (min-width: $tablet-width) {
     @include form-title;
@@ -19,12 +41,46 @@
   }
 }
 
-.contacts__text {
-  width: 139px;
-  margin-top: 26px;
+.contacts__text-wrapper {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     @include cover-text;
     color: #000000;
   }
+}
+
+.contacts__text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.contacts__text-town {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__map {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.contacts__map iframe {
+  border: none;
+  display: block;
+}
+
+.contacts__map-logo {
+  display: block;
+  position: absolute;
+  top: 139px;
+  left: 134px;
 }

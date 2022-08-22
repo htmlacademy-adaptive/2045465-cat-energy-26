@@ -212,6 +212,7 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
+    justify-content: center;
     // background-color: #eaeaea;
   }
 }
@@ -220,15 +221,29 @@
   display: block;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .example__cat--full {
   clip-path: inset(0 140px 0 0);
+
+  @media (min-width: $tablet-width) {
+    clip-path: inset(0 280px 0 0);
+  }
 }
 
 .example__cat--slim {
   clip-path: inset(0 0 0 140px);
   margin-left: -280px;
+
+  @media (min-width: $tablet-width) {
+    clip-path: inset(0 0 0 280px);
+    margin-left: -560px;
+  }
 }
 
 .example__range-bar {
@@ -247,6 +262,11 @@
   &:active {
     background-color: $basic-background;
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+    left: 50%;
   }
 }
 
@@ -267,6 +287,10 @@
   &:active {
     border-color: $basic-background;
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
   }
 }
 

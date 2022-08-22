@@ -7,6 +7,10 @@
   margin-bottom: 170px;
   background-color: #68b738d9;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/background-cat-green@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     background: none;
@@ -29,8 +33,16 @@
       background-repeat: no-repeat;
       z-index: -1;
     }
+
+    @media (min-resolution: 2dppx) {
+      & ::before {
+        background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/background-desktop@2x.png");
+        background-size: cover;
+      }
+    }
   }
 }
+
 
 .program__title {
   @include heading;

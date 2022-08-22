@@ -54,7 +54,14 @@
           <h2 class="program__title">Функциональное<br> питание для котов</h2>
           <p class="program__slogan">Занялся собой? Займись котом!</p>
           <div class="program__inner-image">
-            <img class="program__image" src="./img/glass-orange.png" width="280" height="270" alt="Корм для котов.">
+            <picture>
+              <source media="(min-width: 1440px)"
+                srcset="./img/glass-orange-desktop.png 1x, ./img/glass-orange-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/glass-orange-tablet.png 1x, ./img/glass-orange-tablet@2x.png 2x">
+              <img class="program__image" src="./img/glass-orange.png" width="280" height="270"
+                srcset="./img/glass-orange@2x.png 2x" alt="Корм для котов.">
+            </picture>
           </div>
           <a class="program__button" href="form.html">подобрать программу</a>
         </div>
@@ -123,10 +130,18 @@
         </div>
         <div class="example__range">
           <div class="example__cat-slider">
-            <img class="example__cat example__cat--full" src="./img/cat-before.png" width="280" height="256"
-              alt="Фотография кота Бориса до.">
-            <img class="example__cat example__cat--slim" src="./img/cat-after.png" width="280" height="256"
-              alt="Фотография кота Бориса после.">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="./img/cat-before-tablet.png 1x, ./img/cat-before-tablet@2x.png 2x">
+              <img class="example__cat example__cat--full" src="./img/cat-before.png" width="280" height="256"
+                srcset="./img/cat-before@2x.png 2x" alt="Фотография кота Бориса до.">
+            </picture>
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="./img/cat-after-tablet.png 1x, ./img/cat-after-tablet@2x.png 2x">
+              <img class="example__cat example__cat--slim" src="./img/cat-after.png" width="280" height="256"
+                srcset="./img/cat-after@2x.png 2x" alt="Фотография кота Бориса после.">
+            </picture>
           </div>
           <div class="example__range-bar">
             <button class="example__range-toggle" type="button">

@@ -38,29 +38,46 @@
   padding-left: 44px;
 }
 
-.control__tick {
-  position: absolute;
-  top: -5px;
-  left: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid #cdcdcd;
+.control__mark {
+  @include text;
+  color: #222222;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -3px;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+  }
 
   @media (min-width: $tablet-width) {
-    top: 0;
+    @include tablet-text;
+    color: #222222;
+    line-height: 30px;
+
+    &::after {
+      top: 0;
+    }
   }
 }
 
-.control__input[type="radio"]:checked + .control__tick::before {
+.control__input[type="radio"]:checked + .control__mark::before {
   position: absolute;
   content: "";
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  top: 7px;
-  left: 7px;
+  top: 5px;
+  left: -32px;
   background-color: $basic-background;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+  }
 }
 
 .control__item {
@@ -69,16 +86,5 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;
     padding: 0;
-  }
-}
-
-.control__mark {
-  @include text;
-  color: #222222;
-
-  @media (min-width: $tablet-width) {
-    @include tablet-text;
-    color: #222222;
-    line-height: 30px;
   }
 }

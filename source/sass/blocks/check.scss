@@ -18,38 +18,43 @@
   padding-left: 44px;
 }
 
-.check__tick {
-  position: absolute;
-  top: -5px;
-  left: 0;
-  width: 26px;
-  height: 26px;
-  border: 1px solid #cdcdcd;
-
-  @media (min-width: $tablet-width) {
-    top: 2px;
-  }
-}
-
-.check__input[type="checkbox"]:checked + .check__tick::before {
-  position: absolute;
-  content: "";
-  width: 18px;
-  height: 14px;
-  top: 5px;
-  left: 4px;
-  background: url("../img/check.svg") no-repeat;
-}
-
-.check__item {
-  margin: 13px 0;
-}
-
 .check__mark {
   @include text;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #cdcdcd;
+  }
 
   @media (min-width: $tablet-width) {
     @include tablet-text;
     line-height: 30px;
+
+    &::after {
+      top: 2px;
+    }
   }
+}
+
+.check__input[type="checkbox"]:checked + .check__mark::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 14px;
+  top: 2px;
+  left: 4px;
+  background: url("../img/check.svg") no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 6px;
+  }
+}
+
+.check__item {
+  margin: 13px 0;
 }

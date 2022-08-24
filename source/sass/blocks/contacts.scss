@@ -76,6 +76,7 @@
 .contacts__map iframe {
   border: none;
   display: block;
+  width: 100%;
 }
 
 .contacts__map-logo {
@@ -83,4 +84,15 @@
   position: absolute;
   top: 139px;
   left: 134px;
+
+  @media (min-width: $tablet-width) {
+    top: 146px;
+    left: 333px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 131px;
+    left: auto;
+    right: 419px;
+  }
 }

@@ -65,6 +65,7 @@
     counter-increment: number;
     padding: 151px 0 57px;
     margin-bottom: 37px;
+    display: block;
 
     &::after {
       top: 40px;
@@ -92,45 +93,14 @@
   }
 }
 
-.advantages__item--contains {
-  // background: url("../img/contains.svg") 7% 55% no-repeat;
+.advantages__item-icon {
+  position: absolute;
+  top: 10px;
+  left: 15px;
 
   @media (min-width: $tablet-width) {
-    background-position: 13% 26%;
-    margin-right: 154px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 0;
-  }
-}
-
-.advantages__item--sort {
-  // background: url("../img/sort.svg") 6% 55% no-repeat;
-
-  @media (min-width: $tablet-width) {
-    background-position: 11% 26%;
-  }
-}
-
-.advantages__item--portion {
-  // background: url("../img/portion.svg") 7% 55% no-repeat;
-
-  @media (min-width: $tablet-width) {
-    background-position: 12% 26%;
-    margin-right: 137px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 0;
-  }
-}
-
-.advantages__item--time {
-  // background: url("../img/time.svg") 6% 55% no-repeat;
-
-  @media (min-width: $tablet-width) {
-    background-position: 11% 26%;
+    top: 60px;
+    left: 25px;
   }
 }
 

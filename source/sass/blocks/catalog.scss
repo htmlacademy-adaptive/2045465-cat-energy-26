@@ -1,6 +1,6 @@
 .catalog {
   padding: 30px 33px 18px 20px;
-  background: url("../img/arrow.svg") 48% 89% no-repeat #f2f2f2;
+  background-color: #f2f2f2;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -185,5 +185,10 @@
 
 .catalog__service {
   @include text;
+  display: block;
   text-decoration: none;
+}
+
+.catalog__service-arrow {
+  margin-left: 17px;
 }

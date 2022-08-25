@@ -56,6 +56,11 @@
           <p class="program__slogan">Занялся собой? Займись котом!</p>
           <div class="program__inner-image">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="./img/glass-desktop.webp 1x, ./img/glass-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/glass-tablet.webp 1x, ./img/glass-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/glass-mobile.webp 1x, ./img/glass-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)"
                 srcset="./img/glass-orange-desktop.png 1x, ./img/glass-orange-desktop@2x.png 2x">
               <source media="(min-width: 768px)"
@@ -69,6 +74,12 @@
         <div class="program__inner">
           <div class="program__catalog catalog catalog--loss">
             <h3 class="catalog__title">Похудение</h3>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="./img/cat-icon-sit-desktop.svg">
+              <source media="(min-width: 768px)" srcset="./img/cat-icon-sit-tablet.svg">
+              <img class="catalog__icon-loss" src="./img/cat-icon-sit.svg" width="36" height="50"
+                alt="Изображение котика.">
+            </picture>
             <p class="catalog__intro">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
               на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="catalog__service" href="#">Каталог slim<svg class="catalog__service-arrow" width="24" height="12">
@@ -77,6 +88,12 @@
           </div>
           <div class="program__catalog catalog catalog--weight">
             <h3 class="catalog__title">Набор массы</h3>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="./img/cat-icon-desktop.svg">
+              <source media="(min-width: 768px)" srcset="./img/cat-icon-tablet.svg">
+              <img class="catalog__icon-weight" src="./img/cat-icon.svg" width="67" height="28"
+                alt="Изображение котика.">
+            </picture>
             <p class="catalog__intro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="catalog__service" href="#">Каталог pro<svg class="catalog__service-arrow" width="24" height="12">

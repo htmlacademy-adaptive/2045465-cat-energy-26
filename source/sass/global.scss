@@ -10,6 +10,10 @@ body {
   font-weight: 400;
   color: #444444;
   background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .visually-hidden {

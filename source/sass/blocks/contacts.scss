@@ -38,7 +38,6 @@
   @media (min-width: $tablet-width) {
     @include form-title;
     font-size: 20px;
-    padding-right: 200px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +53,7 @@
   @media (min-width: $tablet-width) {
     @include cover-text;
     color: #000000;
-    padding-left: 140px;
+    padding-left: 250px;
     text-align: right;
   }
 

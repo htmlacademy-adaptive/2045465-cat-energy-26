@@ -38,6 +38,7 @@
     display: flex;
     flex-wrap: wrap;
     counter-reset: number;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,7 +48,7 @@
 
 .advantages__item {
   margin-bottom: 26px;
-  padding-left: 80px;
+  // padding-left: 80px;
   position: relative;
 
   &::after {

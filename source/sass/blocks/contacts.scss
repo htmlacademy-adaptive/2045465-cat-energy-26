@@ -38,6 +38,11 @@
   @media (min-width: $tablet-width) {
     @include form-title;
     font-size: 20px;
+    padding-right: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -49,11 +54,19 @@
   @media (min-width: $tablet-width) {
     @include cover-text;
     color: #000000;
+    padding-left: 140px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    text-align: left;
   }
 }
 
 .contacts__text {
   margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;

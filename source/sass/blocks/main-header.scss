@@ -9,12 +9,12 @@
   color: #000000;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    margin: 0 auto;
     width: 708px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    margin: 0 auto;
     width: 1220px;
   }
 }

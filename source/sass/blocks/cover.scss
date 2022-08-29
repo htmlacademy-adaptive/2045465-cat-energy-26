@@ -6,6 +6,7 @@
   width: 280px;
   height: 290px;
   margin: 0;
+  padding: 58px 58px 0;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/background-catalog@2x.png");
@@ -17,6 +18,10 @@
     height: 200px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/background-catalog-tablet.png");
     background-size: 100%;
+    display: flex;
+    // padding: 0;
+    padding: 0 124px 0 77px;
+    justify-content: space-between;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/background-catalog-tablet@2x.png");
@@ -24,16 +29,28 @@
   }
 }
 
+.cover-image {
+  display: block;
+  margin-left: 40px;
+
+  @media (min-width: $tablet-width) and (max-width: 1200px) {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    // width: 100%;
+  }
+}
+
 .cover__message {
   display: block;
   text-align: center;
   margin: 0;
-  padding: 186px 61px 43px 58px;
-  background: url("../img/icon-gift.svg") 50% 25% no-repeat;
+  padding-top: 40px;
 
-  @media (min-width: $tablet-width)  and (max-width: 1200px) {
-    padding: 71px 124px 69px 422px;
+  @media (min-width: $tablet-width) and (max-width: 1200px) {
+    padding: 0;
+    margin-top: 71px;
+    width: 161px;
     text-align: left;
-    background-position: 10% 50%;
   }
 }

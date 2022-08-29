@@ -10,6 +10,10 @@ body {
   font-weight: 400;
   color: #444444;
   background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .visually-hidden {
@@ -29,4 +33,10 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }

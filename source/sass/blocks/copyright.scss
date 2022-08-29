@@ -1,12 +1,18 @@
-.copyright {
+.copyright__link {
+  text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 22px 0;
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
+  &:active {
+    opacity: 0.3;
   }
+}
+
+.copyright__link:active + .copyright__network {
+  fill: $basic-background;
+  opacity: 0.3;
 }
 
 .copyright__text {
@@ -25,7 +31,6 @@
   fill: $basic-background;
 }
 
-.copyright__network:active {
-  fill: $basic-background;
-  opacity: 0.3;
-}
+// .copyright__network:active {
+//   fill: $basic-background;
+// }

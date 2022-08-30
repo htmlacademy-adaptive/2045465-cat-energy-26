@@ -149,6 +149,10 @@
   }
 }
 
+.form__feedback-field::placeholder {
+  color: #444444;
+}
+
 .form__feedback--email {
   position: relative;
 }
@@ -189,6 +193,17 @@
 
   @media (min-width: $desktop-width) {
     min-width: 1220px;
+  }
+}
+
+.form__feedback-comment::placeholder {
+  color: #444444;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

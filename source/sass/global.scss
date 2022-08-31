@@ -1,5 +1,9 @@
+html {
+  height: 100%;
+}
+
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   min-height: 100%;
   display: flex;
@@ -9,10 +13,9 @@ body {
   line-height: 18px;
   font-weight: 400;
   color: #444444;
-  background-color: #ffffff;
+  background-color: #e5e5e5;
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
     position: relative;
   }
 }

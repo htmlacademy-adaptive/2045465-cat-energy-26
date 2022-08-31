@@ -1,5 +1,14 @@
 .main-footer {
   background-color: $color-background;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+  }
+}
+
+.main-footer__wrapper {
+  margin: 0 auto;
 }
 
 .main-footer__footer {

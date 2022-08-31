@@ -136,7 +136,7 @@ export const watcher = () => {
   gulp.watch('source/*.html', gulp.series(html, reload));
   gulp.watch('source/img/icons/*.svg', gulp.series(sprite));
   gulp.watch('source/img/**/*.svg', gulp.series(svg));
-  gulp.watch('source/img/**/*.{jpg,png}', gulp.series(optimizeImages, createWebp));
+  gulp.watch('source/img/**/*.{jpg,png}', gulp.series(optimizeImages, copyImages, createWebp));
   // gulp.watch('source/*.html').on('change', browser.reload);
 }
 

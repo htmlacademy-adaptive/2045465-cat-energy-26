@@ -189,6 +189,10 @@
   @include text;
   display: block;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__service-arrow {
@@ -196,8 +200,13 @@
   transform: scaleX(1);
   transform-origin: center left;
   transition: transform 0.5s;
+}
 
-  &:hover {
-    transform: scaleX(1.4);
-  }
+.catalog__service:hover .catalog__service-arrow {
+  transform: scaleX(1.4);
+}
+
+.catalog__service:active .catalog__service-arrow {
+  transform: scaleX(1.4);
+  opacity: 0.3;
 }

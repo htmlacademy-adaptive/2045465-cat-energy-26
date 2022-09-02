@@ -81,6 +81,19 @@
   }
 }
 
+.control__field:hover .control__mark::after {
+  border-color: #bababa;
+}
+
+.control__input:disabled + .control__mark {
+  opacity: 0.3;
+  cursor: no-drop;
+}
+
+// .control__field:active .control__mark {
+
+// }
+
 .control__item {
   padding: 25px 0 0;
 

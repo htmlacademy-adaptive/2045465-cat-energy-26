@@ -56,6 +56,15 @@
   }
 }
 
+.check__field:hover .check__mark::after {
+  border-color: #bababa;
+}
+
+.check__input:disabled + .check__mark {
+  opacity: 0.3;
+  cursor: no-drop;
+}
+
 .check__item {
   margin: 13px 0;
 }

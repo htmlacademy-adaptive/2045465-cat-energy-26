@@ -3,12 +3,8 @@
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
-    min-width: 1440px;
+    min-width: 100%;
   }
-}
-
-.main-footer__wrapper {
-  margin: 0 auto;
 }
 
 .main-footer__footer {
@@ -26,8 +22,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
-    padding: 57px 0 58px;
+    margin: 0 auto;
+    padding: 57px 110px;
+    max-width: 1440px;
   }
 }
 

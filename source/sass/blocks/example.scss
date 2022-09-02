@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    background-image: linear-gradient(to bottom, #ffffff 205px, $color-background 205px, $color-background);
   }
 }
 
@@ -32,7 +33,8 @@
     padding: 70px 110px 75px;
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, #ffffff 205px, $color-background 205px, $color-background);
+    margin: 0 auto;
+    max-width: 1440px;
   }
 }
 

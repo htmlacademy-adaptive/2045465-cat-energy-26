@@ -8,7 +8,6 @@
   margin: 0 auto;
   padding: 0 20px;
   color: #000000;
-  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -40,4 +39,12 @@
   display: block;
   height: 65px;
   position: relative;
+}
+
+.main-header__logo[href]:hover {
+  opacity: 0.8;
+
+  &:active {
+    opacity: 0.6;
+  }
 }

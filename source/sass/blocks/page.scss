@@ -1,0 +1,9 @@
+.page__body-container {
+  background-color: #ffffff;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+  }
+}

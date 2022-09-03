@@ -61,11 +61,11 @@
             <legend class="visually-hidden">Данные вашего питомца.</legend>
             <label class="form__feedback">
               <span class="form__feedback-label">ИМЯ:<sup>*</sup></span>
-              <input class="form__feedback-field" type="text" name="feedback-field-name" value="Барсик">
+              <input class="form__feedback-field" type="text" name="feedback-field-name" value="Барсик" required>
             </label>
             <label class="form__feedback">
               <span class="form__feedback-label">Вес&nbsp;(кг):<sup>*</sup></span>
-              <input class="form__feedback-field" type="text" name="feedback-field-name" value="7">
+              <input class="form__feedback-field" type="text" name="feedback-field-name" value="7" required>
             </label>
             <label class="form__feedback">
               <span class="form__feedback-label">Возраст&nbsp;(лет):</span>
@@ -102,16 +102,16 @@
             <label class="form__feedback form__feedback--email">
               <span class="form__feedback-label">E-&nbsp;mail:<sup>*</sup></span>
               <input class="form__feedback-field" type="email" name="feedback-field-email"
-                placeholder="kuklachev@gmail.com">
-              <svg class="form__feedback-field-email" width="20" height="14">
+                placeholder="kuklachev@gmail.com" required>
+              <svg class="form__feedback-field-icon form__feedback-field-icon--email" width="20" height="14">
                 <use href="./img/sprite.svg#email-icon"></use>
               </svg>
             </label>
             <label class="form__feedback form__feedback--phone">
               <span class="form__feedback-label">Телефон:<sup>*</sup></span>
               <input class="form__feedback-field" type="tel" name="feedback-field-phone"
-                placeholder="8 (960) 900-60-90">
-              <svg class="form__feedback-field-phone" width="20" height="20">
+                placeholder="8 (960) 900-60-90" required>
+              <svg class="form__feedback-field-icon" width="20" height="20">
                 <use href="./img/sprite.svg#phone-icon"></use>
               </svg>
             </label>

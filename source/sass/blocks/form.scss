@@ -1,12 +1,21 @@
 .form__group {
   @include fieldset;
   position: relative;
+
+  // @media (min-width: $desktop-width) {
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //   }
+  // }
 }
 
 .form__group-title {
   @include form-title;
   padding: 26px 0 35px;
   margin: 0;
+  background-color: #ffffff;
+  // position: relative;
 
   &::after,
   &::before {
@@ -42,16 +51,15 @@
     padding: 49px 0 76px;
 
     &::after {
-      width: 778px;
+      width: 100vw;
       top: 70px;
-      right: -110px;
+      right: 103%;
     }
 
     &::before {
-      width: 70px;
+      width: 90vw;
       top: 70px;
-      right: auto;
-      left: -110px;
+      left: 45%;
     }
   }
 }
@@ -69,7 +77,11 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      width: 1108px;
+      right: 103%;
+    }
+
+    &::before {
+      left: 18%;
     }
   }
 }
@@ -99,7 +111,11 @@
     padding-top: 67px;
 
     &::after {
-      width: 1078px;
+      right: 103%;
+    }
+
+    &::before {
+      left: 21%;
     }
   }
 }
@@ -124,15 +140,6 @@
   display: flex;
   margin-bottom: 20px;
 }
-
-// .form__feedback-field:hover {
-//   box-shadow: 0 0 0 1px #cdcdcd;
-// }
-
-// .form__feedback-field:focus {
-//   box-shadow: 0 0 0 2px #444444;
-//   outline: none;
-// }
 
 .form__feedback-label {
   @include text;
@@ -168,8 +175,29 @@
     outline: none;
   }
 
-  &:invalid {
-    box-shadow: inset 0 0 0 2px #ff8282;
+  &:focus + .form__feedback-field-icon {
+    fill: $basic-background;
+  }
+
+  // &:focus:invalid + .form__feedback-field-icon {
+  //   fill: #ff8282;
+  //   border-color: 1px solid #ff8282;
+  // }
+  // &:focus:invalid + .form__feedback-field-icon,
+  // &:not(:placeholder-shown):not(:focus):invalid + .form__feedback-field-icon {
+  //   // box-shadow: inset 0 0 0 2px #ff8282;
+  //   fill: #ff8282;
+  //   border-color: #ff8282;
+  // }
+
+  &:focus:invalid,
+  &:not(:placeholder-shown):not(:focus):invalid {
+    outline: 1px solid #ff8282;
+  }
+
+  &:focus:invalid + .form__feedback-field-icon,
+  &:not(:placeholder-shown):not(:focus):invalid + .form__feedback-field-icon {
+    fill: #ff8282;
   }
 }
 
@@ -177,31 +205,20 @@
   color: #444444;
 }
 
-.form__feedback--email {
-  position: relative;
-}
-
-.form__feedback-field:focus + .form__feedback-field-email {
-  fill: $basic-background;
-}
-
-.form__feedback-field-email {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1;
-  fill: #ffffff;
-}
-
+.form__feedback--email,
 .form__feedback--phone {
   position: relative;
 }
 
-.form__feedback-field-phone {
+.form__feedback-field-icon {
   position: absolute;
   top: 20px;
   right: 20px;
   z-index: 1;
+}
+
+.form__feedback-field-icon--email {
+  fill: #ffffff;
 }
 
 .form__feedback-comment {

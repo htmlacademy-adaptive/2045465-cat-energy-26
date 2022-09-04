@@ -138,6 +138,14 @@
     width: 244px;
     margin: 52px 190px 0 0;
   }
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    @include button-active;
+  }
 }
 
 .program__catalog {

@@ -8,6 +8,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 110px;
     padding-bottom: 86px;
   }
 }
@@ -53,18 +56,18 @@
 
   @media (min-width: $desktop-width) {
     margin: 76px 0 0;
+    padding-left: 0;
 
     &::before {
-      width: 70px;
+      width: 100vw;
       top: 20px;
-      right: auto;
-      left: -110px;
+      left: 32%;
     }
 
     &::after {
-      width: 927px;
+      width: 100vw;
       top: 20px;
-      right: -110px;
+      right: 103%;
     }
   }
 }
@@ -148,6 +151,14 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 4/5;
+  }
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    @include button-active;
   }
 }
 

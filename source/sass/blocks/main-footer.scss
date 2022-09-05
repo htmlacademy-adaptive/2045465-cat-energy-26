@@ -26,7 +26,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 30px;
-    padding: 58px 0 55px;
+    padding: 49px 0 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,13 +37,14 @@
 }
 
 .main-footer__logo {
-  padding: 39px 0 32px;
+  padding: 39px 0 30px;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     border: none;
     padding: 0;
+    padding-right: 25px;
   }
 }
 

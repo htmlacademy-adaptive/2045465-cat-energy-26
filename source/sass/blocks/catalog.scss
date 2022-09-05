@@ -1,10 +1,10 @@
 .catalog {
-  padding: 30px 33px 18px 20px;
+  padding: 30px 33px 20px 20px;
   background-color: #f2f2f2;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 319px 57px 53px;
+    padding: 77px 314px 64px 53px;
     background-position: 25% 83%;
   }
 
@@ -16,7 +16,8 @@
   }
 }
 
-.catalog--loss {
+.catalog--loss,
+.catalog--weight {
   margin-bottom: 20px;
 
   &::after {
@@ -24,7 +25,7 @@
     content: "";
     width: 50px;
     height: 50px;
-    top: 21px;
+    top: 25px;
     left: 22px;
     border-radius: 50%;
     background-color: $basic-background;
@@ -55,54 +56,54 @@
   }
 }
 
-.catalog--weight {
-  margin-bottom: 20px;
+// .catalog--weight {
+//   margin-bottom: 20px;
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 50px;
-    top: 21px;
-    left: 22px;
-    border-radius: 50%;
-    background-color: $basic-background;
-    z-index: 1;
-  }
+//   &::after {
+//     position: absolute;
+//     content: "";
+//     width: 50px;
+//     height: 50px;
+//     top: 21px;
+//     left: 22px;
+//     border-radius: 50%;
+//     background-color: $basic-background;
+//     z-index: 1;
+//   }
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+//   @media (min-width: $tablet-width) {
+//     margin-bottom: 45px;
 
-    &::after {
-      top: 91px;
-      left: 448px;
-      width: 200px;
-      height: 200px;
-    }
-  }
+//     &::after {
+//       top: 91px;
+//       left: 448px;
+//       width: 200px;
+//       height: 200px;
+//     }
+//   }
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+//   @media (min-width: $desktop-width) {
+//     margin-bottom: 0;
 
-    &::after {
-      top: 47px;
-      left: 52px;
-      width: 100px;
-      height: 100px;
-    }
-  }
-}
+//     &::after {
+//       top: 47px;
+//       left: 52px;
+//       width: 100px;
+//       height: 100px;
+//     }
+//   }
+// }
 
 .catalog__icon-loss {
   position: absolute;
-  top: 20px;
+  top: 21px;
   left: 30px;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
-    top: 90px;
+    top: 80px;
     left: auto;
     right: 91px;
   }
@@ -117,16 +118,16 @@
 
 .catalog__icon-weight {
   position: absolute;
-  top: 40px;
-  left: 10px;
+  top: 37px;
+  left: 13px;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 112px;
-    top: 45%;
+    top: 36%;
     left: auto;
-    right: 40px;
+    right: 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -141,12 +142,13 @@
   @include catalog-title;
   margin: 0;
   margin-left: 71px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     @include heading;
     line-height: 36px;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -158,8 +160,10 @@
 
 .catalog__intro {
   font-family: "Arial", sans-serif;
-  margin-bottom: 38px;
+  margin: 0;
+  margin-bottom: 42px;
   position: relative;
+
 
   @media (max-width: $mobile-width) {
     &::after {
@@ -177,7 +181,7 @@
     @include cover-text;
     line-height: 24px;
     color: #000000;
-    margin-bottom: 52px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
@@ -193,6 +197,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    @include tablet-text;
+  }
 }
 
 .catalog__service-arrow {
@@ -200,6 +208,10 @@
   transform: scaleX(1);
   transform-origin: center left;
   transition: transform 0.5s;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
 }
 
 .catalog__service:hover .catalog__service-arrow {

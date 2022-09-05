@@ -99,6 +99,7 @@
     left: 5%;
     top: 326px;
     margin: 0;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,9 +123,8 @@
   background-color: $basic-background;
   margin: 3px 20px 0;
 
-  @media (min-width: $tablet-width) and (max-width: 1200px) {
+  @media (min-width: $tablet-width) {
     @include tablet-text;
-    position: relative;
     color: #ffffff;
     padding: 14px 26px;
     margin: 29px 120px 0 0;

@@ -19,7 +19,8 @@
 
   @media (min-width: $tablet-width) {
     @include heading-tablet;
-    padding: 65px 0 82px;
+    padding: 0;
+    margin-bottom: 82px;
     border: none;
   }
 

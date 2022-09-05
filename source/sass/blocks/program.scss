@@ -1,3 +1,11 @@
+.program {
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
 .program__header {
   background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/background-cat-green.png");
   background-repeat: no-repeat;
@@ -22,12 +30,12 @@
   @media (min-width: $desktop-width) {
     min-height: 667px;
     margin: 0;
-    padding-left: 190px;
+    // padding-left: 0;
 
     & ::before {
       position: absolute;
       content: "";
-      top: 0;
+      top: -172px;
       right: 0;
       width: 720px;
       height: 694px;

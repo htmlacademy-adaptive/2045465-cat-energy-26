@@ -31,7 +31,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 75px 0;
+    padding: 77px 0;
 
     &::after {
       width: 145px;
@@ -48,7 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 49px 0 76px;
+    padding: 50px 0 76px;
 
     &::after {
       width: 100vw;
@@ -77,8 +77,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 46px 0 75px;
+
     &::after {
       width: 478px;
+      top: 68px;
+    }
+
+    &::before {
+      width: 30px;
+      top: 68px;
     }
   }
 
@@ -88,6 +96,7 @@
     }
 
     &::before {
+      width: 100vw;
       left: 18%;
     }
   }
@@ -107,15 +116,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 65px 0 62px;
+    padding: 65px 0 38px;
 
     &::after {
       width: 446px;
-      top: 90px;
+      top: 85px;
     }
 
     &::before {
-      top: 90px;
+      width: 30px;
+      top: 85px;
     }
   }
 
@@ -127,6 +137,7 @@
     }
 
     &::before {
+      width: 100vw;
       left: 21%;
     }
   }
@@ -151,6 +162,10 @@
 .form__feedback {
   display: flex;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__feedback-label {
@@ -161,6 +176,7 @@
   @media (min-width: $tablet-width) {
     @include tablet-text;
     line-height: 30px;
+    margin-right: 18px;
   }
 }
 
@@ -226,6 +242,11 @@
   top: 20px;
   right: 14px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    right: 16px;
+  }
 }
 
 .form__feedback-field-icon--email {
@@ -247,6 +268,7 @@
     min-width: 631px;
     min-height: 174px;
     border: 1px solid #e7e7e7;
+    padding: 10px 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -269,12 +291,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    padding: 54px 0 72px;
+    padding: 0 0 72px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 61px 0 82px;
+    padding: 16px 0 86px;
   }
 }
 
@@ -286,8 +308,11 @@
   text-align: center;
 
   @media (max-width: $mobile-width) {
-    font-size: 16px;
     padding: 0 0 32px 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -311,8 +336,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin: 0 61px 0 0;
-    padding: 14px 45px;
+    margin: 0 64px 0 0;
+    padding: 19px 46px;
     width: 282px;
   }
 

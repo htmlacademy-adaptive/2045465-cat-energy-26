@@ -7,7 +7,7 @@
   background-color: $color-background;
 
   @media (min-width: $tablet-width) {
-    padding: 56px 70px;
+    padding: 59px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,21 +103,3 @@
   width: 100%;
   height: 100%;
 }
-
-// .contacts__map-logo {
-//   display: block;
-//   position: absolute;
-//   top: 139px;
-//   left: 134px;
-
-//   @media (min-width: $tablet-width) {
-//     top: 146px;
-//     left: 333px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     top: 131px;
-//     left: auto;
-//     right: 419px;
-//   }
-// }

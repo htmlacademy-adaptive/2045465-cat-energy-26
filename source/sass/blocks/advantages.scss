@@ -94,6 +94,14 @@
   }
 }
 
+.advantages__item:first-child {
+  @media (min-width: $tablet-width) {
+    &::before {
+      right: 24px;
+    }
+  }
+}
+
 .advantages__item:last-child {
   @media (max-width: $mobile-width) {
     margin-bottom: 53px;

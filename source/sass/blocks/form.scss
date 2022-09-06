@@ -226,6 +226,11 @@
   &:not(:placeholder-shown):not(:focus):invalid + .form__feedback-field-icon--email {
     stroke: #ff8282;
   }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: no-drop;
+  }
 }
 
 .form__feedback-field::placeholder {

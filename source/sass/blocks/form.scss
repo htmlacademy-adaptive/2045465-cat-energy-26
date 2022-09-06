@@ -186,6 +186,7 @@
   padding-right: 45px;
   border: 1px solid #e7e7e7;
   width: 100%;
+  appearance: textfield;
 
   @media (min-width: $tablet-width) {
     @include tablet-text;

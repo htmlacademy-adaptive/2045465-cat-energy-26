@@ -100,6 +100,10 @@
   cursor: no-drop;
 }
 
+.control__input:focus + .control__mark::after {
+  outline: 1px solid #bababa;
+}
+
 .control__item {
   padding: 26px 0 0;
 

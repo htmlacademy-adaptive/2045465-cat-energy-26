@@ -77,6 +77,10 @@
   cursor: no-drop;
 }
 
+.check__input:focus + .check__mark::after {
+  outline: 1px solid #bababa;
+}
+
 .check__item {
   padding: 12px 15px;
 

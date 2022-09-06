@@ -104,7 +104,7 @@
 
 
 .form__group-title--check {
-  padding: 23px 0 18px;
+  padding: 22px 0 24px;
 
   &::after {
     width: 136px;
@@ -308,7 +308,7 @@
   text-align: center;
 
   @media (max-width: $mobile-width) {
-    padding: 0 0 32px 16px;
+    padding: 0 0 32px 0;
   }
 
   @media (min-width: $tablet-width) {

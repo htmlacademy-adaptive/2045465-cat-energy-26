@@ -181,10 +181,6 @@
 .additional-card__price {
   margin-left: auto;
 
-  // @media (min-width: $tablet-width) and (max-width: 1200px) {
-  //   margin-left: auto;
-  // }
-
   @media (min-width: $desktop-width) {
     margin-left: 0;
   }

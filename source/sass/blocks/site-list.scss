@@ -1,8 +1,5 @@
 .site-list {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: "Oswald", sans-serif;
+  @include tablet-text;
 
   @media (max-width: $mobile-width) {
     position: absolute;
@@ -10,9 +7,12 @@
     top: 66px;
     left: 0;
     background-color: #ffffff;
+    font-weight: 700;
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
     margin-left: auto;
     width: 440px;
     display: flex;
@@ -32,8 +32,7 @@
   position: relative;
   display: block;
   text-align: center;
-  padding: 22px 0;
-  padding-bottom: 24px;
+  padding: 20px 0 24px;
   text-decoration: none;
   border-top: 1px solid #e6e6e6;
 

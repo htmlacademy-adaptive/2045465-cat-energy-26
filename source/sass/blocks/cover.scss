@@ -19,7 +19,6 @@
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/background-catalog-tablet.png");
     background-size: 100%;
     display: flex;
-    // padding: 0;
     padding: 0 124px 0 77px;
     justify-content: space-between;
 
@@ -42,7 +41,6 @@
     align-self: center;
     margin: 0;
     padding: 0;
-    // width: 100%;
   }
 
   @media (min-width: $desktop-width) {

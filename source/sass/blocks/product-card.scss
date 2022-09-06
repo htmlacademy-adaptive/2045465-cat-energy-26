@@ -34,7 +34,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 33px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
   }
 }
 
@@ -55,11 +59,11 @@
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to bottom, #ffffff 82px, $color-background 82px, $color-background);
     border: none;
-    padding: 4px 36px 30px;
+    padding: 5px 37px 31px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 30px 40px;
+    padding: 0 39px 37px;
   }
 }
 
@@ -80,7 +84,7 @@
 
   @media (min-width: $tablet-width) {
     border: 2px solid $color-background;
-    padding: 0 30px 40px;
+    padding: 0 31px 46px;
     position: relative;
     top: 84px;
   }
@@ -103,7 +107,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 36px;
+    margin-bottom: 45px;
     min-height: 196px;
   }
 }
@@ -126,13 +130,12 @@
     @include tablet-text;
     line-height: 24px;
     text-align: center;
-    margin: 34px 51px 21px 42px;
+    margin: 36px 47px 16px;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 21px;
-    margin: 0;
-    margin-bottom: 22px;
+    margin: 0 5px 22px;
   }
 }
 
@@ -158,24 +161,24 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 161px 42px 23px;
+    margin: 158px 42px 23px;
 
     &::before,
     &::after {
       width: 60px;
-      top: -52px;
-      left: 52px;
+      top: -77px;
+      left: 58px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin: 161px 22px 23px;
+    margin: 155px 22px 23px;
 
     &::before,
     &::after {
       width: 60px;
-      top: -65px;
-      left: 40px;
+      top: -80px;
+      left: 39px;
     }
   }
 }
@@ -203,7 +206,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 53px;
+    padding: 11px 53px;
   }
 
   &:hover {
@@ -225,7 +228,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 39px;
+    padding: 13px 39px;
     margin: 0;
   }
 

@@ -5,12 +5,12 @@
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
     padding: 0;
-    padding-top: 52px;
+    padding-top: 54px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    background-image: linear-gradient(to bottom, #ffffff 205px, $color-background 205px, $color-background);
+    background-image: linear-gradient(to bottom, #ffffff 167px, $color-background 167px, $color-background);
   }
 }
 
@@ -31,7 +31,7 @@
 
 .example__wrapper {
   @media (min-width: $desktop-width) {
-    padding: 70px 110px 75px;
+    padding: 31px 110px 75px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -47,6 +47,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 }
 
@@ -59,6 +60,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    margin: 0;
   }
 }
 
@@ -72,10 +74,13 @@
     line-height: 24px;
     color: #000000;
     margin-bottom: 69px;
+    margin-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 436px;
+    margin: 0;
+    margin-bottom: 84px;
   }
 }
 
@@ -94,6 +99,7 @@
 
   @media (min-width: $desktop-width) {
     justify-content: start;
+    margin-bottom: 57px;
   }
 }
 
@@ -147,6 +153,7 @@
   @media (min-width: $tablet-width) {
     @include catalog-title;
     font-size: 30px;
+    margin-bottom: 11px;
   }
 }
 
@@ -203,7 +210,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    margin: 75px 0 0 0;
+    margin: 0;
     font-size: 20px;
   }
 }
@@ -284,6 +291,11 @@
   @media (min-width: $tablet-width) {
     top: 39%;
     left: 47.7%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 45%;
+    left: 46.7%;
   }
 }
 

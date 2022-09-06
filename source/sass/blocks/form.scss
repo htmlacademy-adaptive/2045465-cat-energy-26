@@ -13,7 +13,7 @@
 
 .form__group-title {
   @include form-title;
-  padding: 26px 0 35px;
+  padding: 48px 0 30px;
   margin: 0;
   background-color: #ffffff;
 
@@ -24,7 +24,7 @@
     height: 2px;
     width: 99px;
     background-color: $basic-background;
-    top: 40px;
+    top: 63px;
     right: -20px;
   }
 
@@ -65,8 +65,15 @@
 }
 
 .form__group-title--comment {
+  padding: 15px 0 35px;
+
   &::after {
     width: 158px;
+    top: 28px;
+  }
+
+  &::before {
+    width: 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -88,10 +95,15 @@
 
 
 .form__group-title--check {
-  padding: 23px 0 34px;
+  padding: 23px 0 18px;
 
   &::after {
     width: 136px;
+    top: 36px;
+  }
+
+  &::before {
+    width: 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -138,12 +150,12 @@
 
 .form__feedback {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .form__feedback-label {
   @include text;
-  margin-right: 10px;
+  margin-right: 14px;
   align-self: center;
 
   @media (min-width: $tablet-width) {
@@ -154,7 +166,7 @@
 
 .form__feedback-field {
   @include text;
-  padding: 13px 15px;
+  padding: 12px 14px;
   padding-right: 45px;
   border: 1px solid #e7e7e7;
   width: 100%;
@@ -212,7 +224,7 @@
 .form__feedback-field-icon {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 14px;
   z-index: 1;
 }
 
@@ -227,7 +239,7 @@
   min-width: 280px;
   min-height: 151px;
   border: 1px solid #e7e7e7;
-  padding: 10px 15px;
+  padding: 10px 13px;
   color: #444444;
   resize: vertical;
 
@@ -275,8 +287,7 @@
 
   @media (max-width: $mobile-width) {
     font-size: 16px;
-    margin-top: 21px;
-    padding: 21px 0 32px;
+    padding: 0 0 32px 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -291,12 +302,12 @@
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 7px 44px;
+  padding: 9px 44px;
   border: none;
   text-align: center;
   background-color: $basic-background;
-  margin-top: 41px;
   width: 100%;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

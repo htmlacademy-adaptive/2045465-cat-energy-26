@@ -28,14 +28,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 667px;
     margin: 0;
-    // padding-left: 0;
+    padding-left: 190px;
+    padding-top: 111px;
+    min-height: 664px;
 
     & ::before {
       position: absolute;
       content: "";
-      top: -172px;
+      top: -112px;
       right: 0;
       width: 720px;
       height: 694px;
@@ -70,6 +71,10 @@
     padding: 0;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 41px;
+  }
 }
 
 .program__slogan {
@@ -88,6 +93,10 @@
     margin-bottom: 49px;
     padding: 0;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
   }
 }
 
@@ -109,7 +118,7 @@
     position: absolute;
     width: 552px;
     height: 499px;
-    top: 141px;
+    top: 28px;
     left: auto;
     right: 330px;
     z-index: 2;
@@ -139,7 +148,7 @@
     color: #ffffff;
     padding: 14px 26px;
     width: 244px;
-    margin: 52px 190px 0 0;
+    margin: 0;
   }
 
   &:hover {
@@ -172,6 +181,6 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    padding: 0 110px 71px;
+    padding: 0 110px 60px;
   }
 }

@@ -1,5 +1,6 @@
 .check {
   @include list-none;
+  margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -66,5 +67,5 @@
 }
 
 .check__item {
-  margin: 13px 0;
+  margin: 22px 0;
 }

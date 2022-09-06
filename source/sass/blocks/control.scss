@@ -1,7 +1,7 @@
 .control {
   @include list-none;
   position: relative;
-  margin-bottom: 26px;
+  margin-top: 14px;
 
   @media (max-width: $mobile-width) {
     &::after,
@@ -48,7 +48,7 @@
     position: absolute;
     content: "";
     top: -3px;
-    left: -40px;
+    left: -44px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -72,8 +72,8 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  top: 5px;
-  left: -32px;
+  top: 6px;
+  left: -36px;
   background-color: $basic-background;
 
   @media (min-width: $tablet-width) {
@@ -95,7 +95,7 @@
 // }
 
 .control__item {
-  padding: 25px 0 0;
+  padding: 26px 0 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;

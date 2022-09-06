@@ -12,6 +12,7 @@
     max-width: 1440px;
     position: relative;
     margin: 0 auto;
+    background-color: $color-background;
   }
 }
 
@@ -26,12 +27,12 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 30px;
-    padding: 49px 0 37px;
+    padding: 46px 0 37px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    padding: 57px 110px;
+    padding: 41px 110px;
     max-width: 1440px;
   }
 }

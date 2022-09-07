@@ -84,6 +84,7 @@
 
 .main-nav__list {
   @include list-none;
+  z-index: 1;
 }
 
 .main-nav__list a {
@@ -99,6 +100,7 @@
 .main-nav__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 

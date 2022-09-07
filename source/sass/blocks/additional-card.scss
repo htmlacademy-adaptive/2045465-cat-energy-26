@@ -1,22 +1,24 @@
 .additional-card {
   @media (max-width: $mobile-width) {
-    padding: 0 20px;
+    padding: 22px 20px 0;
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 76px;
+    padding: 76px 0 42px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 86px;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 110px 21px;
   }
 }
 
 .additional-card__title {
   @include form-title;
   line-height: 24px;
-  margin: 25px 0 0;
-  padding-bottom: 36px;
+  margin: 0;
+  margin-bottom: 34px;
   position: relative;
 
   &::before,
@@ -33,7 +35,7 @@
   @media (min-width: $tablet-width) {
     @include heading;
     line-height: 36px;
-    margin: 68px 0 0;
+    margin: 0;
     padding-left: 38px;
     padding-bottom: 80px;
 
@@ -53,28 +55,30 @@
 
   @media (min-width: $desktop-width) {
     margin: 76px 0 0;
+    padding-left: 0;
 
     &::before {
-      width: 70px;
+      width: 100vw;
       top: 20px;
-      right: auto;
-      left: -110px;
+      left: 31%;
     }
 
     &::after {
-      width: 927px;
+      width: 100vw;
       top: 20px;
-      right: -110px;
+      right: 103%;
     }
   }
 }
 
 .additional-card__list {
   @include list-none;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    margin-bottom: 68px;
   }
 }
 
@@ -82,7 +86,7 @@
   @include card-text;
   font-size: 14px;
   line-height: 14px;
-  padding: 13px 0 19px;
+  padding: 16px 0;
   border-bottom: 1px solid #cdcdcd;
 
   @media (max-width: $mobile-width) {
@@ -94,7 +98,7 @@
     @include tablet-text;
     font-family: "Arial", sans-serif;
     font-size: 16px;
-    padding: 26px 38px 28px;
+    padding: 25px 38px 28px;
     display: grid;
     grid-template-columns: 1fr 1fr 93px;
   }
@@ -102,6 +106,7 @@
   @media (min-width: $desktop-width) {
     padding: 15px 0;
     grid-template-columns: 325px 248px 80px 244px;
+    align-items: center;
   }
 }
 
@@ -148,12 +153,22 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 4/5;
+    padding: 10px 0;
+  }
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    @include button-active;
   }
 }
 
 .additional-card__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -165,7 +180,9 @@
 }
 
 .additional-card__price {
-  @media (min-width: $tablet-width) and (max-width: 1200px) {
-    margin-left: auto;
+  margin-left: auto;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }

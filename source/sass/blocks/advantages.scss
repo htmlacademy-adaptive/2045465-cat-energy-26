@@ -1,16 +1,17 @@
 .advantages {
   border-bottom: 1px solid #e6e6e6;
-  background-color: #ffffff;
 
   @media (min-width: $desktop-width) {
     border: none;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
 .advantages__title {
   @include heading;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     @include heading-tablet;
@@ -24,29 +25,29 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 30px;
-    padding: 32px 0 47px;
+    padding: 13px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 110px;
-    padding-bottom: 69px;
   }
 }
 
 .advantages__list {
   @include list-none;
-  background-color: #ffffff;
-  z-index: -3;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     counter-reset: number;
     justify-content: space-between;
+    margin-right: 75px;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
+    margin: 0;
   }
 }
 
@@ -54,7 +55,6 @@
   margin-bottom: 26px;
   padding-left: 80px;
   position: relative;
-  background-color: #ffffff;
   z-index: 1;
 
   &::after {
@@ -65,7 +65,7 @@
     top: 0;
     left: 0;
     background-color: $basic-background;
-    // z-index: -1;
+    z-index: -1;
   }
 
   @media (min-width: $tablet-width) {
@@ -94,6 +94,14 @@
   }
 }
 
+.advantages__item:first-child {
+  @media (min-width: $tablet-width) {
+    &::before {
+      right: 24px;
+    }
+  }
+}
+
 .advantages__item:last-child {
   @media (max-width: $mobile-width) {
     margin-bottom: 53px;
@@ -102,13 +110,12 @@
 
 .advantages__item-icon {
   position: absolute;
-  top: 10px;
-  left: 15px;
-  z-index: 1;
+  top: 12px;
+  left: 16px;
 
   @media (min-width: $tablet-width) {
-    top: 60px;
-    left: 25px;
+    top: 64px;
+    left: 27px;
   }
 }
 

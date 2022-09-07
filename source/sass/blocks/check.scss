@@ -1,21 +1,30 @@
 .check {
   @include list-none;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    margin-bottom: 29px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-columns: 1fr;
+    column-gap: 77px;
   }
 }
 
 .check__field {
   position: relative;
   display: block;
-  padding-left: 44px;
+  padding-left: 31px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 44px;
+  }
 }
 
 .check__mark {
@@ -24,10 +33,10 @@
   &::after {
     position: absolute;
     content: "";
-    top: -5px;
-    left: 0;
-    width: 26px;
-    height: 26px;
+    top: -4px;
+    left: -15px;
+    width: 29px;
+    height: 29px;
     border: 1px solid #cdcdcd;
   }
 
@@ -36,7 +45,10 @@
     line-height: 30px;
 
     &::after {
-      top: 2px;
+      top: -5px;
+      left: -15px;
+      width: 40px;
+      height: 40px;
     }
   }
 }
@@ -46,15 +58,39 @@
   content: "";
   width: 18px;
   height: 14px;
-  top: 2px;
-  left: 4px;
+  top: 3px;
+  left: -9px;
   background: url("../img/check.svg") no-repeat;
 
   @media (min-width: $tablet-width) {
-    top: 6px;
+    top: 11px;
+    left: -5px;
   }
 }
 
+.check__field:hover .check__mark::after {
+  border-color: #bababa;
+}
+
+.check__input:disabled + .check__mark {
+  opacity: 0.3;
+  cursor: no-drop;
+}
+
+.check__input:focus + .check__mark::after {
+  outline: 1px solid #bababa;
+}
+
 .check__item {
-  margin: 13px 0;
+  padding: 12px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 0 22px 16px;
+    grid-row: 1/3;
+    padding-left: 15px;
+  }
 }

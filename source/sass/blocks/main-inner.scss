@@ -4,7 +4,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    padding: 0;
+    overflow-x: hidden;
   }
 }
 
@@ -18,11 +19,14 @@
 
   @media (min-width: $tablet-width) {
     @include heading-tablet;
-    padding: 65px 0 82px;
+    padding: 0;
+    margin-bottom: 82px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 74px 0 84px;
+    padding: 77px 0 84px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }

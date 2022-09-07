@@ -1,3 +1,11 @@
+.form {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 110px;
+  }
+}
+
 .form__group {
   @include fieldset;
   position: relative;
@@ -5,8 +13,9 @@
 
 .form__group-title {
   @include form-title;
-  padding: 26px 0 35px;
+  padding: 48px 0 30px;
   margin: 0;
+  background-color: #ffffff;
 
   &::after,
   &::before {
@@ -15,14 +24,14 @@
     height: 2px;
     width: 99px;
     background-color: $basic-background;
-    top: 40px;
+    top: 63px;
     right: -20px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 75px 0;
+    padding: 77px 0;
 
     &::after {
       width: 145px;
@@ -39,59 +48,84 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 49px 0 76px;
+    padding: 50px 0 76px;
 
     &::after {
-      width: 778px;
+      width: 100vw;
       top: 70px;
-      right: -110px;
+      right: 103%;
     }
 
     &::before {
-      width: 70px;
+      width: 100vw;
       top: 70px;
-      right: auto;
-      left: -110px;
+      left: 45%;
     }
   }
 }
 
 .form__group-title--comment {
+  padding: 15px 0 35px;
+
   &::after {
     width: 158px;
+    top: 28px;
+  }
+
+  &::before {
+    width: 0;
   }
 
   @media (min-width: $tablet-width) {
+    padding: 46px 0 75px;
+
     &::after {
       width: 478px;
+      top: 68px;
+    }
+
+    &::before {
+      width: 30px;
+      top: 68px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &::after {
-      width: 1108px;
+      right: 103%;
+    }
+
+    &::before {
+      width: 100vw;
+      left: 18%;
     }
   }
 }
 
 
 .form__group-title--check {
-  padding: 23px 0 34px;
+  padding: 22px 0 24px;
 
   &::after {
     width: 136px;
+    top: 36px;
+  }
+
+  &::before {
+    width: 0;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 65px 0 62px;
+    padding: 65px 0 38px;
 
     &::after {
       width: 446px;
-      top: 90px;
+      top: 85px;
     }
 
     &::before {
-      top: 90px;
+      width: 30px;
+      top: 85px;
     }
   }
 
@@ -99,7 +133,12 @@
     padding-top: 67px;
 
     &::after {
-      width: 1078px;
+      right: 103%;
+    }
+
+    &::before {
+      width: 100vw;
+      left: 21%;
     }
   }
 }
@@ -122,30 +161,76 @@
 
 .form__feedback {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__feedback-label {
   @include text;
-  margin-right: 10px;
+  margin-right: 14px;
   align-self: center;
 
   @media (min-width: $tablet-width) {
     @include tablet-text;
     line-height: 30px;
+    margin-right: 18px;
   }
 }
 
 .form__feedback-field {
   @include text;
-  padding: 13px 15px;
+  padding: 12px 14px;
+  padding-right: 45px;
   border: 1px solid #e7e7e7;
   width: 100%;
+  appearance: textfield;
 
   @media (min-width: $tablet-width) {
     @include tablet-text;
     line-height: 30px;
     padding: 10px 18px;
+    padding-right: 48px;
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px #cdcdcd;
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 2px #444444;
+    outline: none;
+  }
+
+  &:focus + .form__feedback-field-icon--phone {
+    fill: $basic-background;
+  }
+
+  &:focus + .form__feedback-field-icon--email {
+    stroke: $basic-background;
+  }
+
+  &:focus:invalid,
+  &:not(:placeholder-shown):not(:focus):invalid {
+    outline: 1px solid #ff8282;
+    box-shadow: none;
+  }
+
+  &:focus:invalid + .form__feedback-field-icon--phone,
+  &:not(:placeholder-shown):not(:focus):invalid + .form__feedback-field-icon--phone {
+    fill: #ff8282;
+  }
+
+  &:focus:invalid + .form__feedback-field-icon--email,
+  &:not(:placeholder-shown):not(:focus):invalid + .form__feedback-field-icon--email {
+    stroke: #ff8282;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: no-drop;
   }
 }
 
@@ -153,26 +238,26 @@
   color: #444444;
 }
 
-.form__feedback--email {
-  position: relative;
-}
-
-.form__feedback-field-email {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1;
-}
-
+.form__feedback--email,
 .form__feedback--phone {
   position: relative;
 }
 
-.form__feedback-field-phone {
+.form__feedback-field-icon {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 14px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    right: 16px;
+  }
+}
+
+.form__feedback-field-icon--email {
+  fill: #ffffff;
+  stroke: #222222;
 }
 
 .form__feedback-comment {
@@ -180,15 +265,30 @@
   @include fieldset;
   min-width: 280px;
   min-height: 151px;
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
-  padding: 10px 15px;
+  border: 1px solid #e7e7e7;
+  padding: 10px 13px;
   color: #444444;
+  resize: vertical;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px #cdcdcd;
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 2px #444444;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: no-drop;
+  }
 
   @media (min-width: $tablet-width) {
     min-width: 631px;
     min-height: 174px;
     border: 1px solid #e7e7e7;
+    padding: 10px 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -211,12 +311,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    padding: 54px 0 72px;
+    padding: 0 0 72px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 61px 0 82px;
+    padding: 16px 0 86px;
   }
 }
 
@@ -228,9 +328,11 @@
   text-align: center;
 
   @media (max-width: $mobile-width) {
+    padding: 0 0 32px 0;
+  }
+
+  @media (min-width: $tablet-width) {
     font-size: 16px;
-    margin-top: 21px;
-    padding: 21px 0 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -240,20 +342,22 @@
 }
 
 .form__button {
+  @include cover-text;
+  font-family: "Oswald", sans-serif;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
-  padding: 7px 44px;
+  padding: 9px 44px;
   border: none;
   text-align: center;
   background-color: $basic-background;
-  margin-top: 41px;
   width: 100%;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 61px 0 0;
-    padding: 14px 45px;
+    font-size: 20px;
+    margin: 0 64px 0 0;
+    padding: 19px 46px;
     width: 282px;
   }
 
@@ -261,5 +365,13 @@
     padding: 14px 188px;
     min-width: 568px;
     margin: 0 81px 0 0;
+  }
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    @include button-active;
   }
 }

@@ -161,12 +161,18 @@
         <div class="example__range">
           <div class="example__cat-slider">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/cat-before-tablet.webp 1x, ./img/cat-before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/cat-before.webp 1x, ./img/cat-before@2x.webp 2x">
+
               <source media="(min-width: 768px)"
                 srcset="./img/cat-before-tablet.png 1x, ./img/cat-before-tablet@2x.png 2x">
               <img class="example__cat example__cat--full" src="./img/cat-before.png" width="280" height="256"
                 srcset="./img/cat-before@2x.png 2x" alt="Фотография кота Бориса до.">
             </picture>
-            <picture>
+            <picture> 
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/cat-after-tablet.webp 1x, ./img/cat-after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/cat-after.webp 1x, ./img/cat-after@2x.webp 2x">
+
               <source media="(min-width: 768px)"
                 srcset="./img/cat-after-tablet.png 1x, ./img/cat-after-tablet@2x.png 2x">
               <img class="example__cat example__cat--slim" src="./img/cat-after.png" width="280" height="256"

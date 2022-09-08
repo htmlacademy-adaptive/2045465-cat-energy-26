@@ -58,6 +58,11 @@
           <h2 class="program__title">Функциональное<br> питание для котов</h2>
           <p class="program__slogan">Занялся собой? Займись котом!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="./img/glass-orange-desktop.webp 1x, ./img/glass-orange-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="./img/glass-orange-tablet.webp 1x, ./img/glass-orange-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/glass-orange.webp 1x, ./img/glass-orange@2x.webp 2x">
             <source media="(min-width: 1440px)"
               srcset="./img/glass-orange-desktop.png 1x, ./img/glass-orange-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
@@ -157,12 +162,18 @@
         <div class="example__range">
           <div class="example__cat-slider">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/cat-before-tablet.webp 1x, ./img/cat-before-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/cat-before.webp 1x, ./img/cat-before@2x.webp 2x">
               <source media="(min-width: 768px)"
                 srcset="./img/cat-before-tablet.png 1x, ./img/cat-before-tablet@2x.png 2x">
               <img class="example__cat example__cat--full" src="./img/cat-before.png" width="280" height="256"
                 srcset="./img/cat-before@2x.png 2x" alt="Фотография кота Бориса до.">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/cat-after-tablet.webp 1x, ./img/cat-after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/cat-after.webp 1x, ./img/cat-after@2x.webp 2x">
               <source media="(min-width: 768px)"
                 srcset="./img/cat-after-tablet.png 1x, ./img/cat-after-tablet@2x.png 2x">
               <img class="example__cat example__cat--slim" src="./img/cat-after.png" width="280" height="256"
@@ -203,13 +214,14 @@
     <section class="main-footer__footer">
       <div class="main-footer__logo">
         <a class="main-footer__logo-link">
-          <img class="main-footer__logo-image" src="./img/logo-text.svg" width="128" height="24" alt="Логотип магазина кэт энерджи.">
+          <img class="main-footer__logo-image" src="./img/logo-text.svg" width="128" height="24"
+            alt="Логотип магазина кэт энерджи.">
         </a>
       </div>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <a class="social__link" href="https://vk.com/htmlacademy">
               <svg class="social__network" aria-hidden="true" focusable="false" width="28" height="22">
                 <use href="./img/sprite.svg#social-vk"></use>
               </svg>
@@ -217,7 +229,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
               <svg class="social__network" aria-hidden="true" focusable="false" width="28" height="22">
                 <use href="./img/sprite.svg#social-youtube"></use>
               </svg>
@@ -225,7 +237,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <a class="social__link" href="https://t.me/htmlacademy">
               <svg class="social__network" aria-hidden="true" focusable="false" width="28" height="22">
                 <use href="./img/sprite.svg#social-telegram"></use>
               </svg>
@@ -234,7 +246,7 @@
           </li>
         </ul>
       </div>
-      <a class="main-footer__copyright copyright copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">HTML Academy</span>
         <svg class="copyright__network" aria-hidden="true" focusable="false" width="27" height="34">
           <use href="./img/sprite.svg#copyright-icon"></use>

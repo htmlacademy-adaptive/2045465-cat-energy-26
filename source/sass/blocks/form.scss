@@ -15,7 +15,6 @@
   @include form-title;
   padding: 48px 0 30px;
   margin: 0;
-  background-color: #ffffff;
 
   &::after,
   &::before {
@@ -343,7 +342,7 @@
 
 .form__button {
   @include cover-text;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   display: block;
   text-decoration: none;
   text-transform: uppercase;

@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 38px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +59,7 @@
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to bottom, #ffffff 82px, $color-background 82px, $color-background);
     border: none;
-    padding: 5px 37px 31px;
+    padding: 5px 37px 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,7 +84,7 @@
 
   @media (min-width: $tablet-width) {
     border: 2px solid $color-background;
-    padding: 0 31px 46px;
+    padding: 0 31px 32px;
     position: relative;
     top: 84px;
   }
@@ -130,7 +130,7 @@
     @include tablet-text;
     line-height: 24px;
     text-align: center;
-    margin: 36px 47px 16px;
+    margin: 33px 47px 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -199,7 +199,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 93px;
+    padding: 9px 93px;
     align-items: flex-end;
     font-size: 16px;
     line-height: 20px;
